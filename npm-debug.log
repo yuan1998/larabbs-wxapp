@@ -1,0 +1,562 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'yarn', '-g' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData yarn
+8 silly fetchNamedPackageData yarn
+9 silly mapToRegistry name yarn
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'yarn',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'yarn',
+12 silly mapToRegistry   name: 'yarn',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/yarn
+14 verbose request uri https://registry.npmjs.org/yarn
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:31:37 AM
+17 verbose request id dacaa8d47103b17e
+18 verbose etag W/"b9bb7e4f7208766a7852578271d89593"
+19 verbose lastModified Mon, 09 Jul 2018 18:13:55 GMT
+20 http request GET https://registry.npmjs.org/yarn
+21 http 304 https://registry.npmjs.org/yarn
+22 verbose headers { date: 'Thu, 19 Jul 2018 09:31:38 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=d8de898810405cc789bd4e9c860c643dc1531992698; expires=Fri, 19-Jul-19 09:31:38 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'cf-ray': '43cc2d1c986c9955-LAX',
+22 verbose headers   etag: '"b9bb7e4f7208766a7852578271d89593"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Mon, 09 Jul 2018 18:13:55 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 19 Jul 2018 09:31:38 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=d8de898810405cc789bd4e9c860c643dc1531992698; expires=Fri, 19-Jul-19 09:31:38 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'cf-ray': '43cc2d1c986c9955-LAX',
+23 silly get     etag: '"b9bb7e4f7208766a7852578271d89593"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Mon, 09 Jul 2018 18:13:55 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/yarn from cache
+25 verbose get saving yarn to /home/vagrant/.npm/registry.npmjs.org/yarn/.cache.json
+26 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule yarn@1.7.0 checking installable status
+40 silly cache add args [ 'yarn', null ]
+41 verbose cache add spec yarn
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'yarn',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'yarn',
+42 silly cache add   name: 'yarn',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed yarn@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for yarn
+45 info addNameTag [ 'yarn', 'latest' ]
+46 silly mapToRegistry name yarn
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'yarn',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'yarn',
+49 silly mapToRegistry   name: 'yarn',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/yarn
+51 verbose addNameTag registry:https://registry.npmjs.org/yarn not in flight; fetching
+52 verbose get https://registry.npmjs.org/yarn not expired, no request
+53 silly addNameTag next cb for yarn with tag latest
+54 silly addNamed yarn@1.7.0
+55 verbose addNamed "1.7.0" is a plain semver version for yarn
+56 silly cache afterAdd yarn@1.7.0
+57 verbose afterAdd /home/vagrant/.npm/yarn/1.7.0/package/package.json not in flight; writing
+58 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/vagrant/.npm/yarn/1.7.0/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree lib
+62 silly currentTree └─┬ yarn@0.27.5
+62 silly currentTree   ├── ajv@4.11.8
+62 silly currentTree   ├── ansi-escapes@2.0.0
+62 silly currentTree   ├── ansi-regex@2.1.1
+62 silly currentTree   ├── ansi-styles@2.2.1
+62 silly currentTree   ├── arr-diff@2.0.0
+62 silly currentTree   ├── arr-flatten@1.1.0
+62 silly currentTree   ├── array-find-index@1.0.2
+62 silly currentTree   ├── array-unique@0.2.1
+62 silly currentTree   ├── asn1@0.2.3
+62 silly currentTree   ├── assert-plus@0.2.0
+62 silly currentTree   ├── asynckit@0.4.0
+62 silly currentTree   ├── aws-sign2@0.6.0
+62 silly currentTree   ├── aws4@1.6.0
+62 silly currentTree   ├── babel-runtime@6.23.0
+62 silly currentTree   ├── balanced-match@1.0.0
+62 silly currentTree   ├── bcrypt-pbkdf@1.0.1
+62 silly currentTree   ├── bl@1.2.1
+62 silly currentTree   ├── boom@2.10.1
+62 silly currentTree   ├── brace-expansion@1.1.8
+62 silly currentTree   ├── braces@1.8.5
+62 silly currentTree   ├── browserify-zlib@0.1.4
+62 silly currentTree   ├── builtin-modules@1.1.1
+62 silly currentTree   ├── bytes@2.5.0
+62 silly currentTree   ├── camelcase@4.1.0
+62 silly currentTree   ├── caseless@0.12.0
+62 silly currentTree   ├── chalk@1.1.3
+62 silly currentTree   ├── chownr@1.0.1
+62 silly currentTree   ├── ci-info@1.0.0
+62 silly currentTree   ├── cli-cursor@2.1.0
+62 silly currentTree   ├── cli-width@2.1.0
+62 silly currentTree   ├── cmd-shim@2.0.2
+62 silly currentTree   ├── co@4.6.0
+62 silly currentTree   ├── color-convert@1.9.0
+62 silly currentTree   ├── color-name@1.1.3
+62 silly currentTree   ├── combined-stream@1.0.5
+62 silly currentTree   ├── commander@2.11.0
+62 silly currentTree   ├── concat-map@0.0.1
+62 silly currentTree   ├── core-js@2.4.1
+62 silly currentTree   ├── core-util-is@1.0.2
+62 silly currentTree   ├── cryptiles@2.0.5
+62 silly currentTree   ├── currently-unhandled@0.4.1
+62 silly currentTree   ├─┬ dashdash@1.14.1
+62 silly currentTree   │ └── assert-plus@1.0.0
+62 silly currentTree   ├── death@1.1.0
+62 silly currentTree   ├── debug@2.6.8
+62 silly currentTree   ├── delayed-stream@1.0.0
+62 silly currentTree   ├── detect-indent@5.0.0
+62 silly currentTree   ├── duplexify@3.5.0
+62 silly currentTree   ├── ecc-jsbn@0.1.1
+62 silly currentTree   ├─┬ end-of-stream@1.0.0
+62 silly currentTree   │ └── once@1.3.3
+62 silly currentTree   ├── escape-string-regexp@1.0.5
+62 silly currentTree   ├── expand-brackets@0.1.5
+62 silly currentTree   ├── expand-range@1.8.2
+62 silly currentTree   ├── extend@3.0.1
+62 silly currentTree   ├── external-editor@2.0.4
+62 silly currentTree   ├── extglob@0.3.2
+62 silly currentTree   ├── extsprintf@1.0.2
+62 silly currentTree   ├── figures@2.0.0
+62 silly currentTree   ├── filename-regex@2.0.1
+62 silly currentTree   ├── fill-range@2.2.3
+62 silly currentTree   ├── for-in@1.0.2
+62 silly currentTree   ├── for-own@0.1.5
+62 silly currentTree   ├── forever-agent@0.6.1
+62 silly currentTree   ├── form-data@2.1.4
+62 silly currentTree   ├── fs.realpath@1.0.0
+62 silly currentTree   ├─┬ getpass@0.1.7
+62 silly currentTree   │ └── assert-plus@1.0.0
+62 silly currentTree   ├── glob-base@0.3.0
+62 silly currentTree   ├── glob-parent@2.0.0
+62 silly currentTree   ├── glob@7.1.2
+62 silly currentTree   ├── graceful-fs@4.1.11
+62 silly currentTree   ├── gunzip-maybe@1.4.1
+62 silly currentTree   ├── har-schema@1.0.5
+62 silly currentTree   ├── har-validator@4.2.1
+62 silly currentTree   ├── has-ansi@2.0.0
+62 silly currentTree   ├── has-flag@2.0.0
+62 silly currentTree   ├── hawk@3.1.3
+62 silly currentTree   ├── hoek@2.16.3
+62 silly currentTree   ├── http-signature@1.1.1
+62 silly currentTree   ├── iconv-lite@0.4.18
+62 silly currentTree   ├── inflight@1.0.6
+62 silly currentTree   ├── inherits@2.0.3
+62 silly currentTree   ├── ini@1.3.4
+62 silly currentTree   ├─┬ inquirer@3.2.0
+62 silly currentTree   │ ├── ansi-regex@3.0.0
+62 silly currentTree   │ ├── ansi-styles@3.2.0
+62 silly currentTree   │ ├── chalk@2.0.1
+62 silly currentTree   │ ├── strip-ansi@4.0.0
+62 silly currentTree   │ └── supports-color@4.2.1
+62 silly currentTree   ├── invariant@2.2.2
+62 silly currentTree   ├── is-buffer@1.1.5
+62 silly currentTree   ├── is-builtin-module@1.0.0
+62 silly currentTree   ├── is-ci@1.0.10
+62 silly currentTree   ├── is-deflate@1.0.0
+62 silly currentTree   ├── is-dotfile@1.0.3
+62 silly currentTree   ├── is-equal-shallow@0.1.3
+62 silly currentTree   ├── is-extendable@0.1.1
+62 silly currentTree   ├── is-extglob@1.0.0
+62 silly currentTree   ├── is-fullwidth-code-point@2.0.0
+62 silly currentTree   ├── is-glob@2.0.1
+62 silly currentTree   ├── is-gzip@1.0.0
+62 silly currentTree   ├── is-number@2.1.0
+62 silly currentTree   ├── is-posix-bracket@0.1.1
+62 silly currentTree   ├── is-primitive@2.0.0
+62 silly currentTree   ├── is-promise@2.1.0
+62 silly currentTree   ├── is-typedarray@1.0.0
+62 silly currentTree   ├── isarray@1.0.0
+62 silly currentTree   ├── isobject@2.1.0
+62 silly currentTree   ├── isstream@0.1.2
+62 silly currentTree   ├── js-tokens@3.0.2
+62 silly currentTree   ├── jsbn@0.1.1
+62 silly currentTree   ├── jschardet@1.5.0
+62 silly currentTree   ├── json-schema@0.2.3
+62 silly currentTree   ├── json-stable-stringify@1.0.1
+62 silly currentTree   ├── json-stringify-safe@5.0.1
+62 silly currentTree   ├── jsonify@0.0.0
+62 silly currentTree   ├─┬ jsprim@1.4.0
+62 silly currentTree   │ └── assert-plus@1.0.0
+62 silly currentTree   ├── kind-of@3.2.2
+62 silly currentTree   ├── leven@2.1.0
+62 silly currentTree   ├── lodash.toarray@4.4.0
+62 silly currentTree   ├── lodash@4.17.4
+62 silly currentTree   ├── loose-envify@1.3.1
+62 silly currentTree   ├── loud-rejection@1.6.0
+62 silly currentTree   ├── micromatch@2.3.11
+62 silly currentTree   ├── mime-db@1.27.0
+62 silly currentTree   ├── mime-types@2.1.15
+62 silly currentTree   ├── mimic-fn@1.1.0
+62 silly currentTree   ├── minimatch@3.0.4
+62 silly currentTree   ├── minimist@0.0.8
+62 silly currentTree   ├── mkdirp@0.5.1
+62 silly currentTree   ├── ms@2.0.0
+62 silly currentTree   ├── mute-stream@0.0.7
+62 silly currentTree   ├── node-emoji@1.8.1
+62 silly currentTree   ├── normalize-path@2.1.1
+62 silly currentTree   ├── oauth-sign@0.8.2
+62 silly currentTree   ├── object-path@0.11.4
+62 silly currentTree   ├── object.omit@2.0.1
+62 silly currentTree   ├── once@1.4.0
+62 silly currentTree   ├── onetime@2.0.1
+62 silly currentTree   ├── os-tmpdir@1.0.2
+62 silly currentTree   ├── pako@0.2.9
+62 silly currentTree   ├── parse-glob@3.0.4
+62 silly currentTree   ├── path-is-absolute@1.0.1
+62 silly currentTree   ├── peek-stream@1.1.2
+62 silly currentTree   ├── performance-now@0.2.0
+62 silly currentTree   ├── preserve@0.2.0
+62 silly currentTree   ├── process-nextick-args@1.0.7
+62 silly currentTree   ├── proper-lockfile@2.0.1
+62 silly currentTree   ├─┬ pump@1.0.2
+62 silly currentTree   │ └── end-of-stream@1.4.0
+62 silly currentTree   ├── pumpify@1.3.5
+62 silly currentTree   ├── punycode@1.4.1
+62 silly currentTree   ├── qs@6.4.0
+62 silly currentTree   ├─┬ randomatic@1.1.7
+62 silly currentTree   │ ├─┬ is-number@3.0.0
+62 silly currentTree   │ │ └── kind-of@3.2.2
+62 silly currentTree   │ └── kind-of@4.0.0
+62 silly currentTree   ├── read@1.0.7
+62 silly currentTree   ├── readable-stream@2.3.3
+62 silly currentTree   ├── regenerator-runtime@0.10.5
+62 silly currentTree   ├── regex-cache@0.4.3
+62 silly currentTree   ├── remove-trailing-separator@1.0.2
+62 silly currentTree   ├── repeat-element@1.1.2
+62 silly currentTree   ├── repeat-string@1.6.1
+62 silly currentTree   ├── request-capture-har@1.2.2
+62 silly currentTree   ├── request@2.81.0
+62 silly currentTree   ├── restore-cursor@2.0.0
+62 silly currentTree   ├── retry@0.10.1
+62 silly currentTree   ├── rimraf@2.6.1
+62 silly currentTree   ├── run-async@2.3.0
+62 silly currentTree   ├── rx-lite-aggregates@4.0.8
+62 silly currentTree   ├── rx-lite@4.0.8
+62 silly currentTree   ├── safe-buffer@5.1.1
+62 silly currentTree   ├── semver@5.3.0
+62 silly currentTree   ├── signal-exit@3.0.2
+62 silly currentTree   ├── sntp@1.0.9
+62 silly currentTree   ├── spdx-correct@1.0.2
+62 silly currentTree   ├── spdx-expression-parse@1.0.4
+62 silly currentTree   ├── spdx-license-ids@1.2.2
+62 silly currentTree   ├─┬ sshpk@1.13.1
+62 silly currentTree   │ └── assert-plus@1.0.0
+62 silly currentTree   ├── stream-shift@1.0.0
+62 silly currentTree   ├── string_decoder@1.0.3
+62 silly currentTree   ├─┬ string-width@2.1.1
+62 silly currentTree   │ ├── ansi-regex@3.0.0
+62 silly currentTree   │ └── strip-ansi@4.0.0
+62 silly currentTree   ├── stringstream@0.0.5
+62 silly currentTree   ├── strip-ansi@3.0.1
+62 silly currentTree   ├── strip-bom@3.0.0
+62 silly currentTree   ├── supports-color@2.0.0
+62 silly currentTree   ├── tar-fs@1.15.3
+62 silly currentTree   ├── tar-stream@1.5.4
+62 silly currentTree   ├── through@2.3.8
+62 silly currentTree   ├── through2@2.0.3
+62 silly currentTree   ├── tmp@0.0.31
+62 silly currentTree   ├── tough-cookie@2.3.2
+62 silly currentTree   ├── tunnel-agent@0.6.0
+62 silly currentTree   ├── tweetnacl@0.14.5
+62 silly currentTree   ├── util-deprecate@1.0.2
+62 silly currentTree   ├── uuid@3.1.0
+62 silly currentTree   ├── v8-compile-cache@1.1.0
+62 silly currentTree   ├── validate-npm-package-license@3.0.1
+62 silly currentTree   ├── verror@1.3.6
+62 silly currentTree   ├── wrappy@1.0.2
+62 silly currentTree   └── xtend@4.0.1
+63 silly idealTree lib
+63 silly idealTree └── yarn@1.7.0
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ansi-escapes
+67 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ansi-regex
+68 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ansi-styles
+69 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/arr-flatten
+70 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/arr-diff
+71 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/array-find-index
+72 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/array-unique
+73 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/asn1
+74 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/assert-plus
+75 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/asynckit
+76 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/aws-sign2
+77 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/aws4
+78 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/balanced-match
+79 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/builtin-modules
+80 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/caseless
+81 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/chownr
+82 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ci-info
+83 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/cli-width
+84 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/co
+85 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/color-name
+86 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/color-convert
+87 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/concat-map
+88 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/brace-expansion
+89 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/core-js
+90 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/core-util-is
+91 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/currently-unhandled
+92 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/dashdash/node_modules/assert-plus
+93 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/dashdash
+94 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/delayed-stream
+95 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/combined-stream
+96 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/escape-string-regexp
+97 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/extend
+98 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/extsprintf
+99 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/figures
+100 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/filename-regex
+101 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/for-in
+102 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/for-own
+103 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/forever-agent
+104 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/fs.realpath
+105 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/getpass/node_modules/assert-plus
+106 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/getpass
+107 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/graceful-fs
+108 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/har-schema
+109 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/has-ansi
+110 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/has-flag
+111 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/hoek
+112 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/boom
+113 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/cryptiles
+114 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/iconv-lite
+115 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inherits
+116 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules/ansi-regex
+117 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules/ansi-styles
+118 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules/strip-ansi
+119 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules/supports-color
+120 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules/chalk
+121 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-buffer
+122 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-deflate
+123 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-dotfile
+124 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-extendable
+125 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-extglob
+126 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/extglob
+127 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-fullwidth-code-point
+128 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-glob
+129 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/glob-parent
+130 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/glob-base
+131 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-gzip
+132 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-posix-bracket
+133 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/expand-brackets
+134 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-primitive
+135 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-equal-shallow
+136 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-promise
+137 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-typedarray
+138 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/isarray
+139 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/isobject
+140 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/isstream
+141 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/js-tokens
+142 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jsbn
+143 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ecc-jsbn
+144 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jschardet
+145 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/json-schema
+146 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/json-stringify-safe
+147 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jsonify
+148 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/json-stable-stringify
+149 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ajv
+150 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/har-validator
+151 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jsprim/node_modules/assert-plus
+152 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/kind-of
+153 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-number
+154 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/lodash
+155 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/lodash.toarray
+156 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/loose-envify
+157 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/mime-db
+158 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/mime-types
+159 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/form-data
+160 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/mimic-fn
+161 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/minimatch
+162 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/minimist
+163 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/mkdirp
+164 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ms
+165 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/mute-stream
+166 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/oauth-sign
+167 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/object.omit
+168 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/onetime
+169 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/os-tmpdir
+170 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/pako
+171 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/browserify-zlib
+172 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/parse-glob
+173 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/path-is-absolute
+174 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/performance-now
+175 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/preserve
+176 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/process-nextick-args
+177 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/punycode
+178 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/qs
+179 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic/node_modules/is-number/node_modules/kind-of
+180 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic/node_modules/is-number
+181 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic/node_modules/kind-of
+182 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic
+183 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/regenerator-runtime
+184 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/regex-cache
+185 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/remove-trailing-separator
+186 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/normalize-path
+187 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/repeat-element
+188 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/repeat-string
+189 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/fill-range
+190 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/expand-range
+191 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/braces
+192 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/retry
+193 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/run-async
+194 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/rx-lite
+195 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/rx-lite-aggregates
+196 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/safe-buffer
+197 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/signal-exit
+198 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/restore-cursor
+199 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/cli-cursor
+200 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/sntp
+201 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/hawk
+202 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/spdx-expression-parse
+203 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/spdx-license-ids
+204 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/spdx-correct
+205 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/sshpk/node_modules/assert-plus
+206 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/stream-shift
+207 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/string_decoder
+208 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/string-width/node_modules/ansi-regex
+209 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/string-width/node_modules/strip-ansi
+210 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/string-width
+211 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/stringstream
+212 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/strip-ansi
+213 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/supports-color
+214 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/through
+215 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tmp
+216 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/external-editor
+217 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tough-cookie
+218 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tunnel-agent
+219 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tweetnacl
+220 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/bcrypt-pbkdf
+221 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/sshpk
+222 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/util-deprecate
+223 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/readable-stream
+224 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/bl
+225 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/uuid
+226 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/verror
+227 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jsprim
+228 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/http-signature
+229 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/wrappy
+230 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/end-of-stream/node_modules/once
+231 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/end-of-stream
+232 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/duplexify
+233 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/once
+234 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inflight
+235 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/glob
+236 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/pump/node_modules/end-of-stream
+237 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/pump
+238 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/pumpify
+239 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/xtend
+240 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tar-stream
+241 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/through2
+242 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/peek-stream
+243 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/babel-runtime
+244 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/bytes
+245 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/camelcase
+246 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/chalk
+247 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/cmd-shim
+248 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/commander
+249 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/death
+250 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/debug
+251 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/detect-indent
+252 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/gunzip-maybe
+253 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/ini
+254 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer
+255 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/invariant
+256 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-builtin-module
+257 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/is-ci
+258 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/leven
+259 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/loud-rejection
+260 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/micromatch
+261 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/node-emoji
+262 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/object-path
+263 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/proper-lockfile
+264 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/read
+265 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/request
+266 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/request-capture-har
+267 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/rimraf
+268 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/semver
+269 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/strip-bom
+270 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/tar-fs
+271 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/v8-compile-cache
+272 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/validate-npm-package-license
+273 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn
+274 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules
+275 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/dashdash/node_modules
+276 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/getpass/node_modules
+277 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/inquirer/node_modules
+278 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/jsprim/node_modules
+279 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic/node_modules/is-number/node_modules
+280 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/randomatic/node_modules
+281 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/sshpk/node_modules
+282 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/string-width/node_modules
+283 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/end-of-stream/node_modules
+284 warn checkPermissions Missing write access to /usr/lib/node_modules/yarn/node_modules/pump/node_modules
+285 warn checkPermissions Missing write access to /usr/lib/node_modules
+286 silly rollbackFailedOptional Starting
+287 silly rollbackFailedOptional Finishing
+288 silly runTopLevelLifecycles Finishing
+289 silly install printInstalled
+290 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules/yarn/node_modules/ansi-escapes'
+290 verbose stack     at Error (native)
+291 verbose cwd /home/vagrant/code/larabbs-wxapp
+292 error Linux 4.4.0-81-generic
+293 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "yarn" "-g"
+294 error node v6.11.1
+295 error npm  v3.10.10
+296 error path /usr/lib/node_modules/yarn/node_modules/ansi-escapes
+297 error code EACCES
+298 error errno -13
+299 error syscall access
+300 error Error: EACCES: permission denied, access '/usr/lib/node_modules/yarn/node_modules/ansi-escapes'
+300 error     at Error (native)
+300 error  { Error: EACCES: permission denied, access '/usr/lib/node_modules/yarn/node_modules/ansi-escapes'
+300 error     at Error (native)
+300 error   errno: -13,
+300 error   code: 'EACCES',
+300 error   syscall: 'access',
+300 error   path: '/usr/lib/node_modules/yarn/node_modules/ansi-escapes' }
+301 error Please try running this command again as root/Administrator.
+302 verbose exit [ -13, true ]
