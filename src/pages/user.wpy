@@ -1,0 +1,35 @@
+<style lang="less">
+
+
+</style>
+
+<template>
+    <view class="container">
+        <text>
+            My Page.
+        </text>
+        <testc :num.sync="num"></testc>
+        <text>
+            you page
+        </text>
+        <testc :num.sync="iNum"></testc>
+    </view>
+</template>
+
+<script>
+import wepy from 'wepy'
+import testCounter from '@/components/testcount'
+
+export default class User extends wepy.page {
+    components = {
+        testc : testCounter
+    }
+
+    data = {
+        num : 12,
+        iNum :11,
+    }
+
+}
+
+</script>

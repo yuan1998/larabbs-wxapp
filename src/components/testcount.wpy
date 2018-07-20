@@ -1,0 +1,28 @@
+<template>
+    <view class="test-counter">
+        <text>
+            {{num}}
+        </text>
+        <button @tap="tap">+</button>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class TestCounter extends wepy.component {
+        props = {
+          num: {
+            type: [Number],
+            default: 50
+          }
+        }
+
+        methods = {
+            tap() {
+                console.log(123);
+                this.num = this.num + 1 ;
+            }
+        }
+    }
+</script>
