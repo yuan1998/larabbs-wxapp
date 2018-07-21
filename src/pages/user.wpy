@@ -18,7 +18,7 @@
 
 <script>
 import wepy from 'wepy'
-import testCounter from '@/components/testcount'
+import testCounter from '_cp_/testcount'
 
 export default class User extends wepy.page {
     components = {

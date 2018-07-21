@@ -1,13 +1,15 @@
 {
-  "description": "larabbs wxapp project",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "postcss": false,
-    "minified": false
-  },
-  "compileType": "miniprogram",
-  "appid": "wxf269a458d17b5f7e",
-  "projectname": "larabbs-wxapp",
-  "miniprogramRoot": "./dist"
+	"description": "larabbs wxapp project",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wxf269a458d17b5f7e",
+	"projectname": "larabbs-wxapp",
+	"miniprogramRoot": "./dist",
+	"condition": {}
 }

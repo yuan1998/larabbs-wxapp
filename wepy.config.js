@@ -14,8 +14,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      counter: path.join(__dirname, 'src/components/counter'),
-      '@': path.join(__dirname, 'src')
+      '@': path.join(__dirname, 'src'),
+      '_cp_':path.join(__dirname,'src/components')
     },
     aliasFields: ['wepy', 'weapp'],
     modules: ['node_modules']
